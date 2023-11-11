@@ -18,7 +18,7 @@ import java.util.List;
 @Data
 @Builder
 public class User {
-
+//working code
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
