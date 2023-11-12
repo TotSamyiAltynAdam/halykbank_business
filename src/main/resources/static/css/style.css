@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+.nav__list {
+    background-color: #F3F3F3;
+    min-height: 100%;
+    width: 375px;
+    padding: 40px;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.nav__list .list__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* .list__item img:first-of-type {
+    width: 180px;
+} */
+
+
+.profile {
+    position: fixed;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+
+.content {
+    position: absolute;
+    left: 40%;
+    top: 12%;
+}
+
+
+.uploadImg {
+    background-color: aquamarine;
+}
+
+
+.content__wrapper {
+    background-color: #F3F3F3;
+}
+
+
+.content__nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    font-size: 14;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.content__nav .label {
+    font-size: 30px;
+}
+
+.nav__item {
+    list-style-type: none;
+}
+.content h1 {
+    margin-bottom: 10px;
+}
+
+.organizations {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius:6px;
+}
+
+.organization {
+    background-color: #00A975;
+    padding: 10px 100px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+
+}
+
+
+.hostories {
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hostories h4 {
+    margin-bottom: 10px;
+}
+
+.rangeDate {
+    margin-bottom: 20px;
+}
+
+.recipient {
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 50px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.rangeNumberDate {
+    margin-bottom: 10px;
+}
+
+table {
+    border: 1px solid #ccc;
+
+}
+.field_item {
+    display: flex;
+}
+
+.content .content__wrapper h4:first-child{
+    padding-top: 24px;
+}
+
+.content .content__wrapper .field_item .rect{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+.content{
+    width: 592px;
+}
+.content__wrapper{
+    padding-left: 32px;
+}
+.field_item2{
+    display: flex;
+
+}
+.field_item2 img{
+    margin-right: 20px;
+}
+.field_item2 .wrap_text{
+    font-size: 18px;
+    font-weight: 500;
+}
+.field_item2 .wrap_card{
+    font-size: 15px;
+    color: #9c9898;
+}
+.field_item2 .item_wrap{
+    margin-right: 60px;
+}
+
+.content2{
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    display: flex;
+}
+.content2 .content_card{
+    padding: 18px 24px;
+    width: 226px;
+    height: 150px;
+    /* background-color: #000; */
+    border: 1px solid #9c9898;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.block{
+    display: flex;
+    margin-top: 18px;
+}
+.digit_wrap{
+    margin-left: 15px;
+}
+.digit_wrap .main_text{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+
+.digit_wrap span{
+    color: #198754;
+    font-size: 16px;
+
+}
+
+.content3{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #212529;
+}
+.content3 .content__nav .nav__item:first-child::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #00A975;
+    width: 24%;
+    /* margin-left: 15px; */
+    top: 85%;
+    left: 0%;
+}
+
+.nav__list .line1::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #00A975;
+    width: 42%;
+    /* margin-left: 15px; */
+    top: 16%;
+    left: 18%;
+}
+.nav__list .history_item::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #00A975;
+    width: 28%;
+    /* margin-left: 15px; */
+    top: 16%;
+    left: 18%;
+}
+

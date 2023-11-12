@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"
+      xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <ul class="nav__list">
+        <li class="list__item"><img th:src="@{./img/icons/halykLogo.svg}" alt=""></li>
+        <a th:href="@{history.html}"><li class="list__item history_item">
+            <img th:src="@{./img/icons/organize.svg}" alt="">
+            История
+        </li></a>
+        <a th:href="@{analyze.html}"><li class="list__item analyze_item">
+            <img th:src="@{./img/icons/notice.svg}" alt="">
+            Анализ
+        </li></a>
+        <a th:href="@{staff.html}"><li class="list__item staff_item">
+            <img th:src="@{./img/icons/gosusluga.svg}" alt="">
+            Стафф
+        </li></a>
+    </ul>
+    <div class="content">
+        <h1>Qaganat - Street Abay, 16</h1>
+        <ul class="content__nav">
+            <a th:href="${profile.html}"><li class="nav__item">
+                Профиль
+            </li></a>
+            <li class="nav__item label">
+                >
+            </li>
+            <a th:href="${organization.html}"><li class="nav__item">
+                Организации
+            </li></a>
+            <li class="nav__item label">
+                >
+            </li>
+            <a th:href="${staff.html}"><li class="nav__item">
+                Стафф
+            </li></a>
+        </ul>
+
+        <div class="staff">
+          <h4>Стафф</h4>
+          <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone number</th>
+                <th>Sales in the last month</th>
+                <th>Progress</th>
+
+            </tr>
+            <tr>
+                <td>Dias Makhanbet</td>
+                <td>87777777789</td>
+                <td>100,000tg</td>
+                <td>+25%</td>
+            </tr>
+            <tr>
+                <td>Nursultan Stanbek</td>
+                <td>87777777789</td>
+                <td>150,000tg</td>
+                <td>+25%</td>
+            </tr>
+            <tr>
+                <td>Ninja Cdd</td>
+                <td>87777777789</td>
+                <td>150,000tg</td>
+                <td>+25%</td>
+             </tr>
+             <tr>
+                <td>Ninja Bai</td>
+                <td>87716993665</td>
+                <td>350,000tg</td>
+                <td>+15%</td>
+             </tr>
+         </table>
+        </div>
+    </div>
+    <div class="profile">
+        Dias M.
+        <img th:src="@{./img/icons/man-ring.svg}" alt="">
+    </div>
+</body>
+</html>

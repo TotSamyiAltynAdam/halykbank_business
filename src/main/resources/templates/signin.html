@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"
+      xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" th:href="@{/css/signin.css}">
+    <script th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<img class="logo" th:src="@{./img/icons/halykLogo.svg}" alt="">
+<div class="login-container">
+    <h1>Вход</h1>
+    <form action="#">
+        <div class="input-field">
+            <label for="email">Login</label>
+            <input type="text" id="email" name="email" required placeholder="Login">
+        </div>
+        <div class="input-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Password">
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <div class="login-buttons">
+            <input type="submit" value="Login" onclick="signIn()" class="login">
+            <a th:href="@{profile.html}">Forgot password?</a>
+        </div>
+    </form>
+    <p>Not an account? <a href="#">Registration</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"
+      xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <ul class="nav__list">
+        <li class="list__item"><img th:src="@{./img/icons/halykLogo.svg}" alt=""></li>
+        <li class="list__item"><a th:href="@{'/organization'}" target="_blank" rel="noopener noreferrer">
+            <img th:src="@{./img/icons/organize.svg}" alt="">
+            Организации</a>
+        </li>
+        <li class="list__item">
+            <img th:src="@{./img/icons/notice.svg}" alt="">
+            Уведомления
+        </li>
+        <li class="list__item">
+            <img th:src="@{./img/icons/gosusluga.svg}" alt="">
+            Госуслуги
+        </li>
+        <li class="list__item">
+            <img th:src="@{./img/icons/settings.svg}" alt="">
+            Настройки
+        </li>
+        <li class="list__item">
+            <img th:src="@{./img/icons/contact.svg}" alt="">
+            Контакты банка
+        </li>
+        
+    </ul>
+   
+    <div class="content">
+        <h1>Профиль</h1>
+        <div class="content__wrapper">
+            <h4>Настройки</h4>
+            <div class="content_field">
+                <div class="field_item">
+                    <div class="rect"><img th:src="@{./img/icons/noticeSet.svg}" alt=""></div>
+                    <div class="item_text">Настройка сообщений</div>
+                </div>
+                <div class="field_item">
+                    <div class="rect"><img th:src="@{./img/icons/phone.svg}" alt=""></div>
+                    <div class="item_text">+7 (771) *** **69</div>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="content__wrapper">
+            <h4>Безопасноть</h4>
+            <div class="content_field">
+                <div class="field_item">
+                    <div class="rect"><img th:src="@{./img/icons/locked.svg}" alt=""></div>
+                    <div class="item_text">Смена пароля</div>
+                </div>
+                <div class="field_item">
+                    <div class="rect"><img th:src="@{./img/icons/passwor.svg}" alt=""></div>
+                    <div class="item_text">Смена кода доступа</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="content__wrapper">
+            <h4>Карты</h4>
+            <div class="content_field">
+                <div class="field_item2">
+                    <img th:src="@{./img/icons/visa.svg}" alt="">
+                    <div class="item_wrap">
+                        <div class="wrap_text">VISA Мультивалютная</div>
+                        <div class="wrap_card">*3899</div>
+                    </div>
+                    <div class="item_money">
+                        0.00 <img th:src="@{./img/icons/tenge.svg}" alt="">
+                    </div>
+                </div>
+                <div class="field_item2">
+                    <img th:src="@{./img/icons/visa.svg}" alt="">
+                    <div class="item_wrap">
+                        <div class="wrap_text">VISA Мультивалютная</div>
+                        <div class="wrap_card">*3697</div>
+                    </div>
+                    <div class="item_money">
+                        0.00 <img th:src="@{./img/icons/tenge.svg}" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="profile">
+        Dias M.
+        <img th:src="@{./img/icons/man-ring.svg}" alt="">
+    </div>
+</body>
+</html>

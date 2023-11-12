@@ -16,6 +16,7 @@ public class ReceiptMapper {
 
     private final ItemMapper itemMapper;
     private final EmployeeMapper employeeMapper;
+    private final OrganizationMapper organizationMapper;
 
     public ReceiptDTO toDTO(Receipt receipt) {
         ReceiptDTO receiptDTO = new ReceiptDTO();
@@ -25,6 +26,7 @@ public class ReceiptMapper {
         receiptDTO.setPhoneNumber(receipt.getPhoneNumber());
         receiptDTO.setItemsDTOs(itemMapper.toDtoList(receipt.getItems()));
         receiptDTO.setEmployeeDTO(employeeMapper.toDTO(receipt.getEmployee()));
+        receiptDTO.setOrganizationDTOs(organizationMapper.toDTO(receipt.getOrganization()));
 
         return receiptDTO;
     }
@@ -37,6 +39,7 @@ public class ReceiptMapper {
         receipt.setCreationDate(receiptDTO.getCreationDate());
         receipt.setItems(itemMapper.toEntityList(receiptDTO.getItemsDTOs()));
         receipt.setEmployee(employeeMapper.toModel(receiptDTO.getEmployeeDTO()));
+        receipt.setOrganization(organizationMapper.toEntity(receiptDTO.getOrganizationDTOs()));
 
         return receipt;
     }

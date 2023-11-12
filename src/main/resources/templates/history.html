@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"
+      xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" th:href="@{./style/style.css}">
+    <script th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<ul class="nav__list">
+    <li class="list__item"><img th:src="@{./img/icons/halykLogo.svg}" alt=""></li>
+    <a th:href="@{history.html}"><li class="list__item history_item">
+        <img th:src="@{./img/icons/organize.svg}" alt="">
+        История
+    </li></a>
+    <a th:href="@{analyze.html}"><li class="list__item analyze_item">
+        <img th:src="@{./img/icons/notice.svg}" alt="">
+        Анализ
+    </li></a>
+    <a th:href="@{staff.html}"><li class="list__item staff_item">
+        <img th:src="@{./img/icons/gosusluga.svg}" alt="">
+        Стафф
+    </li></a>
+
+
+</ul>
+<div class="content">
+    <h1>Qaganat - Street Abay, 16</h1>
+    <ul class="content__nav">
+        <a th:href="@{profile.html}"><li class="nav__item">
+            Профиль
+        </li></a>
+        <li class="nav__item label">
+            >
+        </li>
+        <a th:href="@{organization.html}"><li class="nav__item">
+            Организации
+        </li></a>
+        <li class="nav__item label">
+            >
+        </li>
+        <a th:href="@{history.html}"><li class="nav__item">
+            История
+        </li></a>
+
+    </ul>
+
+    <div class="content__wrapper">
+        <h4>История</h4>
+        <div class="content_field" id="show-receipts">
+            <div class="field_item2">
+                <img th:src="@{./img/icons/man.svg}" alt="">
+                <div class="item_wrap">
+                    <div class="wrap_text">Halyk Bank</div>
+                    <div class="wrap_card"><img th:src="@{./img/icons/arrow.png}" alt="">Айдар К.</div>
+                </div>
+                <div class="item_money">
+                    300.00 <img th:src="@{./img/icons/tenge.svg}" alt="">
+                </div>
+            </div>
+            <div class="field_item2">
+                <img th:src="@{./img/icons/man.svg}" alt="">
+                <div class="item_wrap">
+                    <div class="wrap_text">Halyk Bank</div>
+                    <div class="wrap_card"><img th:src="@{./img/icons/arrow.png}" alt="">Айдар К.</div>
+                </div>
+                <div class="item_money">
+                    300.00 <img th:src="@{./img/icons/tenge.svg}" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="profile">
+    Dias M.
+    <img th:src="@{./img/icons/man-ring.svg}" alt="">
+</div>
+</body>
+</html>

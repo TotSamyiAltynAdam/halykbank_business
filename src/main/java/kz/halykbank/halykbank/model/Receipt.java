@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class Receipt {
     private Long id;
 
     @Column(name = "creation_date")
-    private LocalDateTime creationDate;
+    private LocalDate creationDate;
 
     private Integer totalPrice;
 
@@ -37,9 +38,12 @@ public class Receipt {
     @Column(name = "phoneNumber")
     private String phoneNumber;
 
+
+    @ManyToOne
+    private Organization organization;
     @PostConstruct
     public void creationDate() {
-        creationDate = LocalDateTime.now();
+        creationDate = LocalDate.now();
     }
 
 }

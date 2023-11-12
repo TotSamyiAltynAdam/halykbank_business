@@ -19,6 +19,8 @@ public class OrganizationRestController {
 
     @GetMapping
     public List<OrganizationDTO> getList() {
-        return organizationService.getList();
+        return organizationService.getListByUserId();
     }
+
+
 }

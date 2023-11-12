@@ -19,4 +19,10 @@ public class OrganizationService {
         return organizationMapper.toDTOList(organizationRepository.findAll());
     }
 
+
+    public List<OrganizationDTO> getListByUserId() {
+        return organizationMapper.toDTOList(organizationRepository.findAllByUserId(1L));
+
+
+    }
 }
